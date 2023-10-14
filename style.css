@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+/* main container */
+
+#container {
+  background-color: burlywood;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  margin-bottom: 50px;
+  font-size: 45px;
+}
+
+/* Game Board */
+
+#boardContainer {
+  width: 450px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Cells */
+
+.cell {
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  border: 2px solid black;
+  text-align: center;
+  line-height: 3.1;
+  font-size: 48px;
+}
+
+.cell:hover {
+  filter: brightness(90%);
+}
+
+.one,
+.two,
+.three {
+  border-top: none;
+}
+
+.one,
+.four,
+.seven {
+  border-left: none;
+}
+
+.three,
+.six,
+.nine {
+  border-right: none;
+}
+
+.seven,
+.eight,
+.nine {
+  border-bottom: none;
+}
