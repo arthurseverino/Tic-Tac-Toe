@@ -67,3 +67,22 @@ h1 {
 .nine {
   border-bottom: none;
 }
+
+/* Modal */
+
+#modal {
+  display: none;
+  background-color: white;
+  width: 300px;
+  top: 50%;
+}
+
+#restartBtn {
+  border-radius: 8px;
+  width: 80px;
+  background-color: rgb(82, 216, 136);
+}
+
+#restartBtn:hover {
+  filter: brightness(90%);
+}
