@@ -5,10 +5,10 @@
   margin: 0 auto;
 }
 
-/* main container */
+/* Main Container */
 
 #container {
-  background-color: burlywood;
+  background-color: rgb(233, 150, 122);
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -35,6 +35,7 @@ h1 {
   text-align: center;
   font-size: 36px;
   margin-top: 50px;
+  font-weight: 550;
 }
 
 /* Cells */
@@ -42,11 +43,10 @@ h1 {
 .cell {
   width: 150px;
   height: 150px;
-  background-color: white;
-  border: 2px solid black;
+  background-color: rgb(255, 218, 185);
+  border: 2px solid rgb(138, 43, 226);
   text-align: center;
   line-height: 3.1;
-  /* align-self: center; */
   font-size: 48px;
 }
 
@@ -80,25 +80,42 @@ h1 {
 
 /* Modal */
 
-.modalContainer {
+dialog {
+  height: 250px;
   width: 400px;
+  background-color: rgba(255, 255, 255, 0.95);
+  top: 35%;
+  border-radius: 20px;
+}
+
+dialog::backdrop {
+  background: rgba(255, 255, 255, 0.25);
+}
+.modalContainer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 10px;
-}
-
-#restartBtn {
-  border-radius: 8px;
-  width: 200px;
-  background-color: rgb(82, 216, 136);
-}
-
-#restartBtn:hover {
-  filter: brightness(90%);
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 10% 0;
 }
 
 .winnerHeading {
   font-size: 36px;
   font-weight: 700;
+}
+
+#modalHeading {
+  font-size: 20px;
+}
+
+#restartBtn {
+  border-radius: 8px;
+  width: 60%;
+  height: 30px;
+  background-color: rgb(82, 216, 136);
+}
+
+#restartBtn:hover {
+  filter: brightness(90%);
 }

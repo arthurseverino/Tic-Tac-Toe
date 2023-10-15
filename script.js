@@ -53,10 +53,12 @@ cells.forEach((cell) => {
   cell.addEventListener("click", () => {
     if (cell.textContent === "") {
       if (turn) {
+        cell.style.color = "red";
         cell.textContent = "X";
         turnDisplay.textContent = `Current Turn: O`;
         movesX.push(cell.id);
       } else {
+        cell.style.color = "blue";
         cell.textContent = "O";
         turnDisplay.textContent = `Current Turn: X`;
         movesO.push(cell.id);
