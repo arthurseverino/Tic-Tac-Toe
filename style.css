@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0 auto;
 }
@@ -26,6 +28,13 @@ h1 {
   width: 450px;
   display: flex;
   flex-wrap: wrap;
+}
+
+.turnDisplay {
+  width: 450px;
+  text-align: center;
+  font-size: 36px;
+  margin-top: 50px;
 }
 
 /* Cells */
@@ -71,10 +80,7 @@ h1 {
 
 /* Modal */
 
-/* What does the dialog look like with no css */
-
 .modalContainer {
-  background-color: white;
   width: 400px;
   display: flex;
   flex-direction: column;
@@ -84,10 +90,15 @@ h1 {
 
 #restartBtn {
   border-radius: 8px;
-  width: 150px;
+  width: 200px;
   background-color: rgb(82, 216, 136);
 }
 
 #restartBtn:hover {
   filter: brightness(90%);
+}
+
+.winnerHeading {
+  font-size: 36px;
+  font-weight: 700;
 }
